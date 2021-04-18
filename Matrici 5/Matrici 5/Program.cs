@@ -10,9 +10,18 @@ namespace ProdusMatrici
     {
         static void Main(string[] args)
         {
-            Matrix Test = new Matrix(@"..\..\TextFile1.txt", true);
-            foreach(string s in Test.view())
-                Console.
+            Matrix A = new Matrix(@"..\..\matrix1.txt", true);
+            foreach (string s in A.view())
+                Console.WriteLine(s);
+
+            Matrix B = new Matrix(@"..\..\matrix2.txt", false);
+            foreach (string s in B.view())
+                Console.WriteLine(s);
+
+            Matrix C = A.Add(B);
+            if()
+            foreach (string s in C.view())
+                Console.WriteLine(s);
         }
     }
 }
